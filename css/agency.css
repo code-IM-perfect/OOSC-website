@@ -9,6 +9,34 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.speaker {
+    text-align: center;
+    color: #313131;
+    text-transform: uppercase;
+    margin: 25px 0;
+  }
+  .speaker h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .speaker p {
+    margin-bottom: 5px;
+  }
+  .speaker img:hover {
+    opacity: .7;
+  }
+
+  .speaker .social-block {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+}
+
+.speaker .social-block a {
+    display: inline-block; /* Display links inline */
+    margin-right: 10px; /* Add spacing between icons */
+}
+
+
 .text-muted {
     color: #777;
 }
@@ -259,6 +287,10 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+    }
+
+    .navbar-default .nav li a {
+        color: white;
     }
 }
 

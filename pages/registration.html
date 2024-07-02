@@ -124,13 +124,28 @@
         <div class="row">
           <div class="col-md-12">
             <h1 style="text-align: center">Register for the Conference</h1>
-            <p>
-              To register for the Opportunity Open Source Conference, either as
-              an Attendee or as a Speaker, fill out the forms below. YOu might
-              need to fill the form multiple times. If you are an attendee, we
-              will send you your invitation. If you are applying for being a
-              speaker, we will contact you soon.
-            </p>
+            <div class="col-sm-6">
+              <h5 style="text-align: center">As an Attendee</h5>
+              <p style="text-align: justify">
+                To register as an attendee for any of the Events organized as a
+                part of the Opportunity Open Source Conference, please fill out
+                the form below. We will email you the invite to the event.
+                Please do register soon for logistical reasons. You might need
+                to fill the form multiple times. Looking forward to seeing you!
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <h5 style="text-align: center">As a Speaker</h5>
+              <p style="text-align: justify">
+                If you have an awesome topic you'd like to talk on at the
+                Opportunity Open Source Conference and wondering whether to
+                apply or not, then stop wondering and fill the registration form
+                below. We'd love to get in touch! You can also personally reach
+                out to us
+                <a href="mailto: oosc@placeholder.com">here</a>
+                for any querries.
+              </p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -156,6 +171,14 @@
                   name="name"
                   required
                 />
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" name="type" id="type" required>
+                  <option readonly>Registering As</option>
+                  <option>Attendee</option>
+                  <option>Speaker</option>
+                </select>
               </div>
 
               <div class="form-group">
@@ -194,6 +217,28 @@
             <div class="col-sm-6">
               <div class="form-group">
                 <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Current Organization/Institute"
+                  id="org"
+                  name="org"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Role in Organization"
+                  id="position"
+                  name="position"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
                   type="email"
                   class="form-control"
                   placeholder="Email"
@@ -212,14 +257,6 @@
                   name="cell"
                   required
                 />
-              </div>
-
-              <div class="form-group">
-                <select class="form-control" name="type" id="type" required>
-                  <option readonly>Registering As</option>
-                  <option>Attendee</option>
-                  <option>Speaker</option>
-                </select>
               </div>
 
               <div class="form-group">
